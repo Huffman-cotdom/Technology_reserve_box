@@ -1,16 +1,4 @@
-```bash
-
-```
-
-```bash
-
-```
-
-```bash
-git push -u origin main
-```
-
-# Git配置
+# Git基本配置
 
 ## 安装
 
@@ -104,7 +92,27 @@ git remote add origin git@github.com:Huffman-cotdom/Technology_reserve_box.git
 git branch -M main
 ```
 
+将本地仓库文件提交到暂存区
 
+```bash
+git add .
+```
+
+```bash
+git status
+```
+
+执行提交操作
+
+```bash
+git commit -m "init"
+```
+
+将文件push到远程服务器仓库
+
+```bash
+git push -u origin main
+```
 
 
 
