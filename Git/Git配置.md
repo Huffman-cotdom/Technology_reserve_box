@@ -2,20 +2,20 @@
 
 ## 安装
 
-```bash
+```shell
 brew install git
 ```
 
 确认是否安装成功
 
-```bash
+```shell
 $ git --version
 git version 2.32.0 (Apple Git-132)
 ```
 
 ## 配置用户信息
 
-```bash
+```shell
 git config --global user.name "runoob"
 git config --global user.email test@runoob.com
 ```
@@ -28,19 +28,19 @@ git config --global user.email test@runoob.com
 
 **zsh**
 
-```bash
+```shell
 echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> ~/.zshrc && source ~/.zshrc
 ```
 
 查看是否安装成功并打印所有可忽略名单
 
-```bash
+```shell
 gi list
 ```
 
 ### 创建.gitignore_global
 
-```bash
+```shell
 gi macos,visualstudiocode >> ~/.gitignore_global
 ```
 
@@ -62,7 +62,7 @@ gi macos,visualstudiocode >> ~/.gitignore_global
 
 ### 连接远程仓库
 
-```bash
+```shell
 ssh-keygen -t rsa -C "youremail@example.com"
 ```
 
@@ -70,7 +70,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 验证是否成功
 
-```
+```shell
 $ ssh -T git@github.com
 The authenticity of host 'github.com (20.205.243.166)' can't be established.
 ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
@@ -82,35 +82,35 @@ Hi Huffman-cotdom! You've successfully authenticated, but GitHub does not provid
 
 与服务器仓库建立连接
 
-```bash
+```shell
 git remote add origin git@github.com:Huffman-cotdom/Technology_reserve_box.git
 ```
 
 切换分支
 
-```bash
+```shell
 git branch -M main
 ```
 
 将本地仓库文件提交到暂存区
 
-```bash
+```shell
 git add .
 ```
 
-```bash
+```shell
 git status
 ```
 
 执行提交操作
 
-```bash
+```shell
 git commit -m "init"
 ```
 
 将文件push到远程服务器仓库
 
-```bash
+```shell
 git push -u origin main
 ```
 
